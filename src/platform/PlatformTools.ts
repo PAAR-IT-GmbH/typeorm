@@ -2,6 +2,7 @@ import * as path from "path";
 import * as fs from "fs";
 import chalk from "chalk";
 import {highlight, Theme} from "cli-highlight";
+
 export {ReadStream} from "fs";
 export {EventEmitter} from "events";
 export {Readable, Writable} from "stream";
@@ -51,7 +52,7 @@ export class PlatformTools {
                 case "@sap/hana-client":
                     return require("@sap/hana-client");
 
-                case "@sap/hdb-pool":
+                case "hdb-pool":
                     return require("hdb-pool");
 
                 /**
